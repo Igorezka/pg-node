@@ -1,6 +1,7 @@
 #!/bin/sh
 
-ufw enable && ufw allow OpenSSH
+ufw enable && ufw allow OpenSSH,62050/tcp,62051/tcp
+
 
 read -p "Открыть доп. порт? [y/n]: " -n 1 -r
 echo
