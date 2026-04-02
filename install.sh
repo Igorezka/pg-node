@@ -11,6 +11,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
     echo "Введите номер порта:"
     read port
     ufw allow $port
+    echo "Открыт порт $port"
 fi
 
 sudo bash -c "$(curl -sL https://github.com/PasarGuard/scripts/raw/main/pg-node.sh)" @ install
