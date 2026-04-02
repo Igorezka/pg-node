@@ -8,7 +8,7 @@ read -p "Открыть доп. порт? [y/n]: " -n 1 -r
 echo
 
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-    echo "Введите номер порта:"
+    echo "Введите номер порта с указание протокола:"
     read port
     ufw allow $port
     echo "Открыт порт $port"
